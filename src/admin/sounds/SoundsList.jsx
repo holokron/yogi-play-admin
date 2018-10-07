@@ -2,6 +2,7 @@ import React from 'react'
 import { 
     List,
     Datagrid,
+    DateField,
     TextField,
     NumberField,
     EditButton,
@@ -13,6 +14,7 @@ export default function SoundsList(props) {
             <Datagrid>
                 <TextField source="id" />
                 <NumberField source="order" />
+                <DateField source="createdAt" showTime />
                 <TextField source="name" />
                 <TextField source="path" />
                 <EditButton />

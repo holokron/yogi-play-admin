@@ -5,6 +5,8 @@ import {
     BooleanInput,
     SimpleForm,
     Edit,
+    ReferenceArrayInput,
+    SelectArrayInput,
 } from 'react-admin'
 
 export default function SoundsEdit(props) {
@@ -15,6 +17,9 @@ export default function SoundsEdit(props) {
                 <TextInput source="path" />
                 <BooleanInput source="isNew" />
                 <NumberInput source="order" />
+                <ReferenceArrayInput source="tags" reference="tags">
+                    <SelectArrayInput optionText="name" />
+                </ReferenceArrayInput>
             </SimpleForm>
         </Edit>
     )

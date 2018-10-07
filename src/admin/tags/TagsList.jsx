@@ -1,5 +1,11 @@
 import React from 'react'
-import { List, Datagrid, TextField, NumberField } from 'react-admin'
+import { 
+    List,
+    Datagrid,
+    TextField,
+    NumberField,
+    EditButton,
+} from 'react-admin'
 
 export default function TagsList(props) {
     return (
@@ -9,6 +15,7 @@ export default function TagsList(props) {
                 <NumberField source="order" />
                 <TextField source="name" />
                 <TextField source="slug" />
+                <EditButton />
             </Datagrid>
         </List>
     )
